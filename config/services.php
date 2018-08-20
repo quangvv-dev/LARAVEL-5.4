@@ -23,10 +23,15 @@ return [
         'key' => env('SES_KEY'),
         'secret' => env('SES_SECRET'),
         'region' => 'us-east-1',
+        'key' => 'your-ses-key',
+        'secret' => 'your-ses-secret',
+        'region' => 'ses-region',  // e.g. us-east-1
     ],
 
     'sparkpost' => [
         'secret' => env('SPARKPOST_SECRET'),
+        'secret' => 'your-sparkpost-key',
+
     ],
 
     'stripe' => [

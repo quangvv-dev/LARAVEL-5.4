@@ -21,7 +21,7 @@ class CheckStatus
             if(Auth::User()->age >20){
                 return $next($request);
             }else{
-               
+                // Auth::logout();
                 return redirect('/home/vn');    
             }
         }

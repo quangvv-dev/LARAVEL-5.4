@@ -58,5 +58,7 @@ class Kernel extends HttpKernel
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'checkStatus' => \App\Http\Middleware\CheckStatus::class,
         'checkAge' => \App\Http\Middleware\CheckAge::class,
+        'jwt.auth' => \App\Http\Middleware\VerifyJWTToken::class,
+
     ];
 }
