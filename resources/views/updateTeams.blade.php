@@ -1,6 +1,7 @@
 @extends('masterpage')
 @section('content')
 <div class="col-lg-7" style="padding-bottom:120px">
+<h1>UPDATE TEAMS</h1>
                         <form method="POST" action="/teams/{{$detail->id}}" accept-charset="utf-8">
                             {{ csrf_field() }}
                             {{ method_field('PATCH') }}
@@ -24,5 +25,14 @@
                             
                             <button type="submit" class="btn btn-default">Update</button>
                         </form>
+                        @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     </div>
 @endsection

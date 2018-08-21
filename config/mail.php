@@ -111,18 +111,12 @@ return [
     | of the emails. Or, you may simply stick with the Laravel defaults!
     |
     */
-
     'markdown' => [
         'theme' => 'default',
 
         'paths' => [
             resource_path('views/vendor/mail'),
         ],
-    ],
-
-    'mailgun' => [
-        'domain' => 'your-mailgun-domain',
-        'secret' => 'your-mailgun-key',
     ],
 
 ];

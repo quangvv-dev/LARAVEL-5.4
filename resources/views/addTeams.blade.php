@@ -1,6 +1,7 @@
 @extends('masterpage')
 @section('content')
 <div class="col-lg-7" style="padding-bottom:120px">
+<h1>ADD TEAMS</h1>
                         <form action="/teams" method="POST" enctype="multipart/form-data">
                          {{ csrf_field() }}
                         
@@ -23,5 +24,14 @@
                             <button type="submit" class="btn btn-default">ADD</button>
                     
                         <form>
+                        @if(count($errors) > 0)
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     </div>
 @endsection

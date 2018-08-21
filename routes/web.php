@@ -9,5 +9,6 @@ Route::get('/home/{lang}' ,function($lang){
     App::setlocale($lang);
     return view('home');
 }
-
 );
+Route::get('/mail','MailController@index');
+Route::post('/mail','MailController@store');

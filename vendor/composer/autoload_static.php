@@ -369,6 +369,7 @@ class ComposerStaticInit9fcdf03673efbce7f8bb0e557adc97b2
     );
 
     public static $classMap = array (
+        'AddFieldUser' => __DIR__ . '/../..' . '/database/migrations/2018_08_21_090354_add_field_user.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -378,13 +379,17 @@ class ComposerStaticInit9fcdf03673efbce7f8bb0e557adc97b2
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\Controller404' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller404.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\MailController' => __DIR__ . '/../..' . '/app/Http/Controllers/MailController.php',
         'App\\Http\\Controllers\\TeamsController' => __DIR__ . '/../..' . '/app/Http/Controllers/TeamsController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\CheckStatus' => __DIR__ . '/../..' . '/app/Http/Middleware/CheckStatus.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\RedirectIfAuthenticated' => __DIR__ . '/../..' . '/app/Http/Middleware/RedirectIfAuthenticated.php',
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Middleware\\VerifyJWTToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyJWTToken.php',
+        'App\\Http\\Requests\\ValidateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ValidateRequest.php',
         'App\\Mail\\pushMail' => __DIR__ . '/../..' . '/app/Mail/pushMail.php',
         'App\\Models\\Teams' => __DIR__ . '/../..' . '/app/Models/Teams.php',
         'App\\Models\\Users' => __DIR__ . '/../..' . '/app/Models/Users.php',

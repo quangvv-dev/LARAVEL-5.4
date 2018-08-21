@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Models\Teams;
 use App\Http\Controllers\Auth;
-
+use App\Http\Requests\ValidateRequest;
 class TeamsController extends Controller
 {
     /**
@@ -47,7 +47,7 @@ class TeamsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Responsea
      */
-    public function store(Request $request)
+    public function store(ValidateRequest $request)
     {
         $sql               = new Teams();
         $sql->name         = $request->get('txtName');

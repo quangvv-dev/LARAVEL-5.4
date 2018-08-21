@@ -28,6 +28,7 @@ class pushMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->from('example@example.com')
+        ->view('emails.orders.shipped');
     }
 }

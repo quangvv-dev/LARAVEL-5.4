@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'AddFieldUser' => $baseDir . '/database/migrations/2018_08_21_090354_add_field_user.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'App\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
     'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -15,13 +16,17 @@ return array(
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
     'App\\Http\\Controllers\\Controller404' => $baseDir . '/app/Http/Controllers/Controller404.php',
     'App\\Http\\Controllers\\HomeController' => $baseDir . '/app/Http/Controllers/HomeController.php',
+    'App\\Http\\Controllers\\MailController' => $baseDir . '/app/Http/Controllers/MailController.php',
     'App\\Http\\Controllers\\TeamsController' => $baseDir . '/app/Http/Controllers/TeamsController.php',
+    'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\CheckStatus' => $baseDir . '/app/Http/Middleware/CheckStatus.php',
     'App\\Http\\Middleware\\EncryptCookies' => $baseDir . '/app/Http/Middleware/EncryptCookies.php',
     'App\\Http\\Middleware\\RedirectIfAuthenticated' => $baseDir . '/app/Http/Middleware/RedirectIfAuthenticated.php',
     'App\\Http\\Middleware\\TrimStrings' => $baseDir . '/app/Http/Middleware/TrimStrings.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Http\\Middleware\\VerifyJWTToken' => $baseDir . '/app/Http/Middleware/VerifyJWTToken.php',
+    'App\\Http\\Requests\\ValidateRequest' => $baseDir . '/app/Http/Requests/ValidateRequest.php',
     'App\\Mail\\pushMail' => $baseDir . '/app/Mail/pushMail.php',
     'App\\Models\\Teams' => $baseDir . '/app/Models/Teams.php',
     'App\\Models\\Users' => $baseDir . '/app/Models/Users.php',
